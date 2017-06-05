@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-05-31T13:46:15.763Z</updated>
+  <updated>2017-06-05T15:31:53.456Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -16,17 +16,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Android笔记</title>
+    <title>Android笔记之控件</title>
     <link href="http://yoursite.com/child/2017/05/31/Android%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/child/2017/05/31/Android笔记/</id>
     <published>2017-05-31T13:20:14.000Z</published>
-    <updated>2017-05-31T13:46:15.763Z</updated>
+    <updated>2017-06-05T15:31:53.456Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Android学习"><a href="#Android学习" class="headerlink" title="Android学习"></a>Android学习</h1><h2 id="1Hello-World"><a href="#1Hello-World" class="headerlink" title="1Hello World"></a>1Hello World</h2><h2 id="2Hello-World"><a href="#2Hello-World" class="headerlink" title="2Hello World"></a>2Hello World</h2><h2 id="3Hello-World"><a href="#3Hello-World" class="headerlink" title="3Hello World"></a>3Hello World</h2><h2 id="4Hello-World"><a href="#4Hello-World" class="headerlink" title="4Hello World"></a>4Hello World</h2>]]></content>
+    <content type="html"><![CDATA[<h1 id="Android学习笔记之控件"><a href="#Android学习笔记之控件" class="headerlink" title="Android学习笔记之控件"></a>Android学习笔记之控件</h1><h2 id="1-ViewGroup"><a href="#1-ViewGroup" class="headerlink" title="1.ViewGroup"></a>1.ViewGroup</h2><pre><code>ViewGroup父控件，管理多个View控件。通过View形成控件树。
+上层控件负责下层控件的测量和绘制，并统一调度交互事件。
+</code></pre><h2 id="2-View"><a href="#2-View" class="headerlink" title="2.View"></a>2.View</h2><pre><code>view的测量，告诉系统画一个多大的View，在onMeasure()中进行。
+</code></pre><h2 id="3-MeasureSpec"><a href="#3-MeasureSpec" class="headerlink" title="3.MeasureSpec"></a>3.MeasureSpec</h2><pre><code>帮助测量View，32位测量值，高2位为测量模式，底30位为测量大小。用位运行模式为了提高效率。
+</code></pre><h2 id="4-测量模式"><a href="#4-测量模式" class="headerlink" title="4.测量模式"></a>4.测量模式</h2><p><strong> 1.EXACTLY:精确模式，指定控件具体大小，系统默认也是这种模式。</strong><br><strong> 2.AT_MOST：最大值模式，控件尺寸不超过某个值。</strong><br><strong> 3.UNSPECIFIED：想多大就多大，通常情况下，绘制自定义View时用。</strong><br><code><br>       protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {<br>        // TODO Auto-generated method stub<br>        mMeasureHeigth = MeasureSpec.getSize(heightMeasureSpec);<br>        mMeasureWidth = MeasureSpec.getSize(widthMeasureSpec);<br>        setMeasuredDimension(mMeasureWidth, mMeasureHeigth);<br>        initView();<br>    }<br><code></code></code></p>
+<h2 id="5-View的绘制"><a href="#5-View的绘制" class="headerlink" title="5.View的绘制"></a>5.View的绘制</h2><pre><code>onDraw()方法，通过Canvas对象进行绘图。
+</code></pre><h2 id="6-ViewGroup的测量"><a href="#6-ViewGroup的测量" class="headerlink" title="6.ViewGroup的测量"></a>6.ViewGroup的测量</h2><pre><code>当为wrap_content时，对子View进行历遍获取所以子View大小，
+决定自己大小。其他模式则通过具体值。
+</code></pre><h2 id="7-ViewGroup的绘制"><a href="#7-ViewGroup的绘制" class="headerlink" title="7.ViewGroup的绘制"></a>7.ViewGroup的绘制</h2><pre><code>通常不需要，但会调用dispatchDraw()方法来绘制子View。
+</code></pre><h2 id="8-自定义View"><a href="#8-自定义View" class="headerlink" title="8.自定义View"></a>8.自定义View</h2><h3 id="1-对现有控件进行扩展"><a href="#1-对现有控件进行扩展" class="headerlink" title="1.对现有控件进行扩展"></a>1.对现有控件进行扩展</h3><h3 id="2-通过组合来实现新控件"><a href="#2-通过组合来实现新控件" class="headerlink" title="2.通过组合来实现新控件"></a>2.通过组合来实现新控件</h3><h3 id="3-重写View来实现全新控件"><a href="#3-重写View来实现全新控件" class="headerlink" title="3.重写View来实现全新控件"></a>3.重写View来实现全新控件</h3>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Android学习&quot;&gt;&lt;a href=&quot;#Android学习&quot; class=&quot;headerlink&quot; title=&quot;Android学习&quot;&gt;&lt;/a&gt;Android学习&lt;/h1&gt;&lt;h2 id=&quot;1Hello-World&quot;&gt;&lt;a href=&quot;#1Hello-World&quot;
+      &lt;h1 id=&quot;Android学习笔记之控件&quot;&gt;&lt;a href=&quot;#Android学习笔记之控件&quot; class=&quot;headerlink&quot; title=&quot;Android学习笔记之控件&quot;&gt;&lt;/a&gt;Android学习笔记之控件&lt;/h1&gt;&lt;h2 id=&quot;1-ViewGroup&quot;&gt;&lt;a h
     
     </summary>
     

@@ -13,24 +13,24 @@
     
     
     
-    <title>Android笔记 | LetourTheFrance | passage</title>
+    <title>Android笔记之控件 | LetourTheFrance | passage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="Android">
-    <meta name="description" content="Android学习1Hello World2Hello World3Hello World4Hello World">
+    <meta name="description" content="Android学习笔记之控件1.ViewGroupViewGroup父控件，管理多个View控件。通过View形成控件树。 上层控件负责下层控件的测量和绘制，并统一调度交互事件。 2.Viewview的测量，告诉系统画一个多大的View，在onMeasure()中进行。 3.MeasureSpec帮助测量View，32位测量值，高2位为测量模式，底30位为测量大小。用位运行模式为了提高效率。 4.">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android笔记">
+<meta property="og:title" content="Android笔记之控件">
 <meta property="og:url" content="http://yoursite.com/child/2017/05/31/Android笔记/index.html">
 <meta property="og:site_name" content="LetourTheFrance">
-<meta property="og:description" content="Android学习1Hello World2Hello World3Hello World4Hello World">
-<meta property="og:updated_time" content="2017-05-31T13:46:15.763Z">
+<meta property="og:description" content="Android学习笔记之控件1.ViewGroupViewGroup父控件，管理多个View控件。通过View形成控件树。 上层控件负责下层控件的测量和绘制，并统一调度交互事件。 2.Viewview的测量，告诉系统画一个多大的View，在onMeasure()中进行。 3.MeasureSpec帮助测量View，32位测量值，高2位为测量模式，底30位为测量大小。用位运行模式为了提高效率。 4.">
+<meta property="og:updated_time" content="2017-06-05T15:31:53.456Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android笔记">
-<meta name="twitter:description" content="Android学习1Hello World2Hello World3Hello World4Hello World">
+<meta name="twitter:title" content="Android笔记之控件">
+<meta name="twitter:description" content="Android学习笔记之控件1.ViewGroupViewGroup父控件，管理多个View控件。通过View形成控件树。 上层控件负责下层控件的测量和绘制，并统一调度交互事件。 2.Viewview的测量，告诉系统画一个多大的View，在onMeasure()中进行。 3.MeasureSpec帮助测量View，32位测量值，高2位为测量模式，底30位为测量大小。用位运行模式为了提高效率。 4.">
     
         <link rel="alternate" type="application/atom+xml" title="LetourTheFrance" href="/atom.xml">
     
@@ -114,7 +114,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Android笔记</div>
+        <div class="flex-col header-title ellipsis">Android笔记之控件</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -136,7 +136,7 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Android笔记</h1>
+        <h1 class="title">Android笔记之控件</h1>
         <h5 class="subtitle">
             
                 <time datetime="2017-05-31T13:20:14.000Z" itemprop="datePublished" class="page-time">
@@ -161,7 +161,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android学习"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android学习</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1Hello-World"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1Hello World</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2Hello-World"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2Hello World</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3Hello-World"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3Hello World</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4Hello-World"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4Hello World</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android学习笔记之控件"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android学习笔记之控件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-ViewGroup"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.ViewGroup</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-View"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.View</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-MeasureSpec"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3.MeasureSpec</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-测量模式"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4.测量模式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-View的绘制"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">5.View的绘制</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-ViewGroup的测量"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">6.ViewGroup的测量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7-ViewGroup的绘制"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">7.ViewGroup的绘制</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#8-自定义View"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">8.自定义View</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-对现有控件进行扩展"><span class="post-toc-number">1.8.1.</span> <span class="post-toc-text">1.对现有控件进行扩展</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-通过组合来实现新控件"><span class="post-toc-number">1.8.2.</span> <span class="post-toc-text">2.通过组合来实现新控件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-重写View来实现全新控件"><span class="post-toc-number">1.8.3.</span> <span class="post-toc-text">3.重写View来实现全新控件</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
     
@@ -169,7 +169,7 @@
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Android笔记</h1>
+        <h1 class="post-card-title">Android笔记之控件</h1>
         <div class="post-meta">
             <time class="post-time" title="2017-05-31 21:20:14" datetime="2017-05-31T13:20:14.000Z"  itemprop="datePublished">2017-05-31</time>
 
@@ -188,14 +188,23 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="Android学习"><a href="#Android学习" class="headerlink" title="Android学习"></a>Android学习</h1><h2 id="1Hello-World"><a href="#1Hello-World" class="headerlink" title="1Hello World"></a>1Hello World</h2><h2 id="2Hello-World"><a href="#2Hello-World" class="headerlink" title="2Hello World"></a>2Hello World</h2><h2 id="3Hello-World"><a href="#3Hello-World" class="headerlink" title="3Hello World"></a>3Hello World</h2><h2 id="4Hello-World"><a href="#4Hello-World" class="headerlink" title="4Hello World"></a>4Hello World</h2>
+            <h1 id="Android学习笔记之控件"><a href="#Android学习笔记之控件" class="headerlink" title="Android学习笔记之控件"></a>Android学习笔记之控件</h1><h2 id="1-ViewGroup"><a href="#1-ViewGroup" class="headerlink" title="1.ViewGroup"></a>1.ViewGroup</h2><pre><code>ViewGroup父控件，管理多个View控件。通过View形成控件树。
+上层控件负责下层控件的测量和绘制，并统一调度交互事件。
+</code></pre><h2 id="2-View"><a href="#2-View" class="headerlink" title="2.View"></a>2.View</h2><pre><code>view的测量，告诉系统画一个多大的View，在onMeasure()中进行。
+</code></pre><h2 id="3-MeasureSpec"><a href="#3-MeasureSpec" class="headerlink" title="3.MeasureSpec"></a>3.MeasureSpec</h2><pre><code>帮助测量View，32位测量值，高2位为测量模式，底30位为测量大小。用位运行模式为了提高效率。
+</code></pre><h2 id="4-测量模式"><a href="#4-测量模式" class="headerlink" title="4.测量模式"></a>4.测量模式</h2><p><strong> 1.EXACTLY:精确模式，指定控件具体大小，系统默认也是这种模式。</strong><br><strong> 2.AT_MOST：最大值模式，控件尺寸不超过某个值。</strong><br><strong> 3.UNSPECIFIED：想多大就多大，通常情况下，绘制自定义View时用。</strong><br><code><br>       protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {<br>        // TODO Auto-generated method stub<br>        mMeasureHeigth = MeasureSpec.getSize(heightMeasureSpec);<br>        mMeasureWidth = MeasureSpec.getSize(widthMeasureSpec);<br>        setMeasuredDimension(mMeasureWidth, mMeasureHeigth);<br>        initView();<br>    }<br><code></code></code></p>
+<h2 id="5-View的绘制"><a href="#5-View的绘制" class="headerlink" title="5.View的绘制"></a>5.View的绘制</h2><pre><code>onDraw()方法，通过Canvas对象进行绘图。
+</code></pre><h2 id="6-ViewGroup的测量"><a href="#6-ViewGroup的测量" class="headerlink" title="6.ViewGroup的测量"></a>6.ViewGroup的测量</h2><pre><code>当为wrap_content时，对子View进行历遍获取所以子View大小，
+决定自己大小。其他模式则通过具体值。
+</code></pre><h2 id="7-ViewGroup的绘制"><a href="#7-ViewGroup的绘制" class="headerlink" title="7.ViewGroup的绘制"></a>7.ViewGroup的绘制</h2><pre><code>通常不需要，但会调用dispatchDraw()方法来绘制子View。
+</code></pre><h2 id="8-自定义View"><a href="#8-自定义View" class="headerlink" title="8.自定义View"></a>8.自定义View</h2><h3 id="1-对现有控件进行扩展"><a href="#1-对现有控件进行扩展" class="headerlink" title="1.对现有控件进行扩展"></a>1.对现有控件进行扩展</h3><h3 id="2-通过组合来实现新控件"><a href="#2-通过组合来实现新控件" class="headerlink" title="2.通过组合来实现新控件"></a>2.通过组合来实现新控件</h3><h3 id="3-重写View来实现全新控件"><a href="#3-重写View来实现全新控件" class="headerlink" title="3.重写View来实现全新控件"></a>3.重写View来实现全新控件</h3>
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-05-31T13:46:15.763Z" itemprop="dateUpdated">2017-05-31 21:46:15</time>
+    最后更新时间：<time datetime="2017-06-05T15:31:53.456Z" itemprop="dateUpdated">2017-06-05 23:31:53</time>
 </span><br>
 
 
@@ -230,7 +239,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/2017/05/31/Android笔记/&title=《Android笔记》 — LetourTheFrance&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/2017/05/31/Android笔记/&title=《Android笔记之控件》 — LetourTheFrance&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -240,7 +249,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/2017/05/31/Android笔记/&title=《Android笔记》 — LetourTheFrance&source=Android��java" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/2017/05/31/Android笔记/&title=《Android笔记之控件》 — LetourTheFrance&source=Android��java" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -250,7 +259,7 @@
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Android笔记》 — LetourTheFrance&url=http://yoursite.com/child/2017/05/31/Android笔记/&via=http://yoursite.com/child" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Android笔记之控件》 — LetourTheFrance&url=http://yoursite.com/child/2017/05/31/Android笔记/&via=http://yoursite.com/child" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
@@ -361,7 +370,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/2017/05/31/Android笔记/&title=《Android笔记》 — LetourTheFrance&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/2017/05/31/Android笔记/&title=《Android笔记之控件》 — LetourTheFrance&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -371,7 +380,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/2017/05/31/Android笔记/&title=《Android笔记》 — LetourTheFrance&source=Android��java" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/2017/05/31/Android笔记/&title=《Android笔记之控件》 — LetourTheFrance&source=Android��java" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -381,7 +390,7 @@
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Android笔记》 — LetourTheFrance&url=http://yoursite.com/child/2017/05/31/Android笔记/&via=http://yoursite.com/child" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Android笔记之控件》 — LetourTheFrance&url=http://yoursite.com/child/2017/05/31/Android笔记/&via=http://yoursite.com/child" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
