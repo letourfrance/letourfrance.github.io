@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-06-05T15:31:53.456Z</updated>
+  <updated>2017-06-06T15:16:11.668Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android学习笔记之面试相关</title>
+    <link href="http://yoursite.com/child/2017/06/06/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E9%9D%A2%E8%AF%95%E7%9B%B8%E5%85%B3/"/>
+    <id>http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/</id>
+    <published>2017-06-06T15:11:56.000Z</published>
+    <updated>2017-06-06T15:16:11.668Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Android学习笔记之面试过程所需要掌握的技术"><a href="#Android学习笔记之面试过程所需要掌握的技术" class="headerlink" title="Android学习笔记之面试过程所需要掌握的技术"></a>Android学习笔记之面试过程所需要掌握的技术</h2><h3 id="1-基本知识点"><a href="#1-基本知识点" class="headerlink" title="1. 基本知识点"></a>1. 基本知识点</h3><p>比如四大组件如何使用、如何创建Service、如何进行布局等。这类知识是需要熟练掌握的，并且也没什么难度。</p>
+<h3 id="2-稍微深入的知识点"><a href="#2-稍微深入的知识点" class="headerlink" title="2. 稍微深入的知识点"></a>2. 稍微深入的知识点</h3><p>比如AIDL、Binder、多进程、View的绘制流程、事件分发、消息队列等。这类知识对于高级开发者来说也是必须掌握的，然而相信很多候选者在面试 之前并不能对这些问题了如指掌。这些问题基本都是面试过程中很常见的问题，也是高级岗位所必须掌握的问题，不搞定这些问题无法达到百度的高级工程师的标 准，因此也不可能通过面试。</p>
+<h3 id="3-基本知识点的细节"><a href="#3-基本知识点的细节" class="headerlink" title="3. 基本知识点的细节"></a>3. 基本知识点的细节</h3><p>比如Activity的启动模式和标记位、Service同时处于start和bind状态时的停止问题、AsyncTask的同步异步问题以及使用时的 限制等，这种问题还有很多。这类知识点，大家在开发过程中可以并不会去注意，这会导致一个问题，那就是开发应用没问题，但是在面试时面试官只要稍微问下细 节或者特殊情况，就hold不住了。 这类问题也是高级开发者所需要掌握的，有些面试官喜欢问一些看似刁钻的问题，但是候选者如果回答不了也是不好的。</p>
+<h3 id="4-系统核心机制"><a href="#4-系统核心机制" class="headerlink" title="4. 系统核心机制"></a>4. 系统核心机制</h3><p>比如主线程的消息循环、主线程如何和AMS如何跨进程交互、SystemServer进程中的各种Service的工作方式、AsyncTask的工作原 理等。这类知识对于高级开发者也是建议掌握的，因为它们可以让开发者理解Android的运行体系。 这类问题并不是所有的Android面试都会涉及到，但是技术含量高的大公司有可能涉及此类问题。</p>
+<h3 id="5-琐碎的知识点"><a href="#5-琐碎的知识点" class="headerlink" title="5. 琐碎的知识点"></a>5. 琐碎的知识点</h3><p>此类知识点我把它们定义为一些重要但是没有什么技术难度的问题，比如如何打开一个网页、如何打电话、如何发短信、如何定位、多点触控等，这类问题往往不好记忆，但是需要的时候去查一下就能立马搞定。这类问题基本上不会出现在面试过程中。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Android学习笔记之面试过程所需要掌握的技术&quot;&gt;&lt;a href=&quot;#Android学习笔记之面试过程所需要掌握的技术&quot; class=&quot;headerlink&quot; title=&quot;Android学习笔记之面试过程所需要掌握的技术&quot;&gt;&lt;/a&gt;Android学习笔记之面试
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/child/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/child/tags/Android/"/>
+    
+      <category term="面试" scheme="http://yoursite.com/child/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Android笔记之控件</title>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Android学习笔记之面试相关 | LetourTheFrance | passage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Android,面试">
+    <meta name="description" content="Android学习笔记之面试过程所需要掌握的技术1. 基本知识点比如四大组件如何使用、如何创建Service、如何进行布局等。这类知识是需要熟练掌握的，并且也没什么难度。 2. 稍微深入的知识点比如AIDL、Binder、多进程、View的绘制流程、事件分发、消息队列等。这类知识对于高级开发者来说也是必须掌握的，然而相信很多候选者在面试 之前并不能对这些问题了如指掌。这些问题基本都是面试过程中很常">
+<meta name="keywords" content="Android,面试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android学习笔记之面试相关">
+<meta property="og:url" content="http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/index.html">
+<meta property="og:site_name" content="LetourTheFrance">
+<meta property="og:description" content="Android学习笔记之面试过程所需要掌握的技术1. 基本知识点比如四大组件如何使用、如何创建Service、如何进行布局等。这类知识是需要熟练掌握的，并且也没什么难度。 2. 稍微深入的知识点比如AIDL、Binder、多进程、View的绘制流程、事件分发、消息队列等。这类知识对于高级开发者来说也是必须掌握的，然而相信很多候选者在面试 之前并不能对这些问题了如指掌。这些问题基本都是面试过程中很常">
+<meta property="og:updated_time" content="2017-06-06T15:16:11.668Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android学习笔记之面试相关">
+<meta name="twitter:description" content="Android学习笔记之面试过程所需要掌握的技术1. 基本知识点比如四大组件如何使用、如何创建Service、如何进行布局等。这类知识是需要熟练掌握的，并且也没什么难度。 2. 稍微深入的知识点比如AIDL、Binder、多进程、View的绘制流程、事件分发、消息队列等。这类知识对于高级开发者来说也是必须掌握的，然而相信很多候选者在面试 之前并不能对这些问题了如指掌。这些问题基本都是面试过程中很常">
+    
+        <link rel="alternate" type="application/atom+xml" title="LetourTheFrance" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">ouzw</h5>
+          <a href="mailto:494301964@qq.com" title="494301964@qq.com" class="mail">494301964@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/letourfrance" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://weibo.com/236701221" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                微博
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Android学习笔记之面试相关</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Android学习笔记之面试相关</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-06-06T15:11:56.000Z" itemprop="datePublished" class="page-time">
+  2017-06-06
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Android/">Android</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android学习笔记之面试过程所需要掌握的技术"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android学习笔记之面试过程所需要掌握的技术</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-基本知识点"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1. 基本知识点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-稍微深入的知识点"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2. 稍微深入的知识点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-基本知识点的细节"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3. 基本知识点的细节</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-系统核心机制"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4. 系统核心机制</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-琐碎的知识点"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">5. 琐碎的知识点</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-Android学习笔记之面试相关"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Android学习笔记之面试相关</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-06-06 23:11:56" datetime="2017-06-06T15:11:56.000Z"  itemprop="datePublished">2017-06-06</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Android/">Android</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Android学习笔记之面试过程所需要掌握的技术"><a href="#Android学习笔记之面试过程所需要掌握的技术" class="headerlink" title="Android学习笔记之面试过程所需要掌握的技术"></a>Android学习笔记之面试过程所需要掌握的技术</h2><h3 id="1-基本知识点"><a href="#1-基本知识点" class="headerlink" title="1. 基本知识点"></a>1. 基本知识点</h3><p>比如四大组件如何使用、如何创建Service、如何进行布局等。这类知识是需要熟练掌握的，并且也没什么难度。</p>
+<h3 id="2-稍微深入的知识点"><a href="#2-稍微深入的知识点" class="headerlink" title="2. 稍微深入的知识点"></a>2. 稍微深入的知识点</h3><p>比如AIDL、Binder、多进程、View的绘制流程、事件分发、消息队列等。这类知识对于高级开发者来说也是必须掌握的，然而相信很多候选者在面试 之前并不能对这些问题了如指掌。这些问题基本都是面试过程中很常见的问题，也是高级岗位所必须掌握的问题，不搞定这些问题无法达到百度的高级工程师的标 准，因此也不可能通过面试。</p>
+<h3 id="3-基本知识点的细节"><a href="#3-基本知识点的细节" class="headerlink" title="3. 基本知识点的细节"></a>3. 基本知识点的细节</h3><p>比如Activity的启动模式和标记位、Service同时处于start和bind状态时的停止问题、AsyncTask的同步异步问题以及使用时的 限制等，这种问题还有很多。这类知识点，大家在开发过程中可以并不会去注意，这会导致一个问题，那就是开发应用没问题，但是在面试时面试官只要稍微问下细 节或者特殊情况，就hold不住了。 这类问题也是高级开发者所需要掌握的，有些面试官喜欢问一些看似刁钻的问题，但是候选者如果回答不了也是不好的。</p>
+<h3 id="4-系统核心机制"><a href="#4-系统核心机制" class="headerlink" title="4. 系统核心机制"></a>4. 系统核心机制</h3><p>比如主线程的消息循环、主线程如何和AMS如何跨进程交互、SystemServer进程中的各种Service的工作方式、AsyncTask的工作原 理等。这类知识对于高级开发者也是建议掌握的，因为它们可以让开发者理解Android的运行体系。 这类问题并不是所有的Android面试都会涉及到，但是技术含量高的大公司有可能涉及此类问题。</p>
+<h3 id="5-琐碎的知识点"><a href="#5-琐碎的知识点" class="headerlink" title="5. 琐碎的知识点"></a>5. 琐碎的知识点</h3><p>此类知识点我把它们定义为一些重要但是没有什么技术难度的问题，比如如何打开一个网页、如何打电话、如何发短信、如何定位、多点触控等，这类问题往往不好记忆，但是需要的时候去查一下就能立马搞定。这类问题基本上不会出现在面试过程中。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-06-06T15:16:11.668Z" itemprop="dateUpdated">2017-06-06 23:16:11</time>
+</span><br>
+
+
+        
+        如需转发请与我联系，获得允许之后请注明出处：<a href="/2017/06/06/Android学习笔记之面试相关/" target="_blank" rel="external">http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com/child">
+            <img src="/img/avatar.jpg" alt="ouzw">
+            ouzw
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/面试/">面试</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/&title=《Android学习笔记之面试相关》 — LetourTheFrance&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/&title=《Android学习笔记之面试相关》 — LetourTheFrance&source=Android��java" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Android学习笔记之面试相关》 — LetourTheFrance&url=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/&via=http://yoursite.com/child" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/05/31/Android笔记/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Android笔记之控件</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p>
+            <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
+            <span>ouzw &copy; 2015 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/&title=《Android学习笔记之面试相关》 — LetourTheFrance&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/&title=《Android学习笔记之面试相关》 — LetourTheFrance&source=Android��java" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Android学习笔记之面试相关》 — LetourTheFrance&url=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/&via=http://yoursite.com/child" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuElEQVR42u3aQXLCMAwF0N7/0nRLpw18SVaGzjyvGAKxnxeRIuvrKx6Pp/H8zdXn529+f//76tWMr+95bODh4eENln61iNeLS5aeLPHqzq/Bb2bHw8PDW+Mlj+aclCwluXMSlt5Y8PDw8D6Glz/ckyCU/x4PDw/v//LOhop5OMHDw8O7nzdJfPOlJ+lyXpg4XGvBw8PDi3nVRPkTPq+c7+Hh4eGNT9XnhdrtwsSbefHw8PAWePkDN0+Ue7/JS8DV5jA8PDy8+3lJ4SCfrFe2yLfvDxEeHh7eUV612NoDJ21VvUOyN2vAw8PDW+ZV48lo4jwhnjQ04OHh4S3zJsvKwXmTVt5GUN4tPDw8vAGv9/KfTFMNIXmyXi4Q4+Hh4S3w8vameakiCUXV+0frx8PDwzvEO8uYtEblbQF5wRcPDw9vj5e3Q/W2o1B4jY/loq3Bw8PDW+ZVp68WJqrBphcwoqYrPDw8vEO86iM7LyvkhYlqe1ZUusXDw8Nb5iUv+b32rF663GPj4eHh3cnL09ne1aj8Ohg/7oaHh4e3wJs0S02KCGebrgqbhYeHhzfm5QdgCSO5msN6IaF5voeHh4c34FUDwKkFJYGkHGzw8PDwlnn5g36jiaqaUkf/wsPDw1vgVV/yq0ntpGHrEYxyGwEeHh7eIV51EUl4yBPoamNBOZXHw8PDu5HXa4dKtmNy5FZ9DcDDw8Pb5vU+9wJJ/t9qafgypcbDw8Mb8x7FkafLvZasJAgVNgUPDw9vgTeJJ5Ojr6T8Wk6dJwMPDw+vyMsPmarp8tncPy+L/PHGgIeHh7fAqx5Z9Yq/vZS9F8bw8PDwPpOXNw1U2w56x2bR+R4eHh7e7bx8mklJt4q5vA8eHh7eGq9aVO01CuSA3uHWZWDAw8PDO8qrvt73SrfJ8VihxDAn4eHh4XV4326fNcrMTEgiAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
