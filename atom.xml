@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2017-06-06T15:16:11.668Z</updated>
+  <updated>2017-06-06T15:30:46.365Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -16,11 +16,91 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Android学习笔记之面试相关</title>
+    <title>[转]Android学习笔记之路线</title>
+    <link href="http://yoursite.com/child/2017/06/06/%E8%BD%AC-Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%B7%AF%E7%BA%BF/"/>
+    <id>http://yoursite.com/child/2017/06/06/转-Android学习笔记之路线/</id>
+    <published>2017-06-06T15:23:55.000Z</published>
+    <updated>2017-06-06T15:30:46.365Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Android学习笔记成长路线"><a href="#Android学习笔记成长路线" class="headerlink" title="Android学习笔记成长路线"></a>Android学习笔记成长路线</h2><h3 id="1-初级工程师"><a href="#1-初级工程师" class="headerlink" title="1.初级工程师"></a>1.初级工程师</h3><p>Android入门的时候，需要有一本入门书，好好学习书中的内容，同时花一年时间把Android官方文档中的training和guide看一遍，同 时通过写博客和记笔记的方式来做总结，建议让自己的每篇博客都有价值些。通过一年时间的学习，相信每个人都可以达到中级工程师的水平。<br>《第一行代码 Android》、《疯狂Android》</p>
+<h3 id="2-中级工程师"><a href="#2-中级工程师" class="headerlink" title="2.中级工程师"></a>2.中级工程师</h3><ul>
+<li>AIDL：熟悉AIDL，理解其工作原理，懂transact和onTransact的区别；</li>
+<li>Binder：从Java层大概理解Binder的工作原理，懂Parcel对象的使用；</li>
+<li>多进程：熟练掌握多进程的运行机制，懂Messenger、Socket等；</li>
+<li>事件分发：弹性滑动、滑动冲突等；</li>
+<li>玩转View：View的绘制原理、各种自定义View；</li>
+<li>动画系列：熟悉View动画和属性动画的不同点，懂属性动画的工作原理；</li>
+<li>懂性能优化、熟悉mat等工具</li>
+<li>懂点常见的设计模式<br>阅读进阶书籍，阅读Android源码，阅读官方文档并尝试自己写相关的技术文章，需要有一定技术深度和自我思考。在这个阶段的学习过程中，有2个点是比较困扰大家的，一个是阅读源码，另一个是自定义View以及滑动冲突。</li>
+</ul>
+<p><strong>如何阅读源码呢？</strong>这是个头疼的问题，但是源码必须要读。阅读源码的时候不要深入代码细节不可自拔，要关注代码的流程并尽量挖掘出对应用层开发有用的 结论。另外仔细阅读源码中对一个类或者方法的注释，在看不懂源码时，源码中的注释可以帮你更好地了解源码中的工作原理，这个过程虽然艰苦，但是别无他法。</p>
+<p><strong>如何玩转自定义View呢？</strong>我的建议是不要通过学习自定义view而学习自定义view。为什么这么说呢？因为自定义view的种类太多了，各式各样的绚丽的自定义效果，如何学的玩呢！我们要透过现象看本质，更多地去关注自定义view所需的知识点，这里做如下总结：</p>
+<ul>
+<li>搞懂view的滑动原理</li>
+<li>搞懂如何实现弹性滑动</li>
+<li>搞懂view的滑动冲突</li>
+<li>搞懂view的measure、layout和draw</li>
+<li>然后再学习几个已有的自定义view的例子</li>
+<li>最后就可以搞定自定义view了，所谓万变不离其宗</li>
+</ul>
+<p>大概再需要1-2年时间，即可达到高级工程师的技术水平。我个人认为通过《Android开发艺术探索》和《Android群英传》可以缩短这个过 程为0.5-1年。注意，达到高级工程师的技术水平不代表就可以立刻成为高级工程师（受机遇、是否跳槽的影响），但是技术达到了，成为高级工程师只是很简 单的事。</p>
+<p>技术要求:</p>
+<ul>
+<li>稍微深入的知识点<br>AIDL、Messenger、Binder、多进程、动画、滑动冲突、自定义View、消息队列等</li>
+<li>书籍推荐<br>《Android开发艺术探索》、《Android群英传》<h3 id="3-高级工程师"><a href="#3-高级工程师" class="headerlink" title="3.高级工程师"></a>3.高级工程师</h3></li>
+<li>了解系统核心机制：</li>
+</ul>
+<ol>
+<li>了解SystemServer的启动过程</li>
+<li>了解主线程的消息循环模型</li>
+<li>了解AMS和PMS的工作原理</li>
+<li>能够回答问题”一个应用存在多少个Window？“</li>
+<li>了解四大组件的大概工作流程</li>
+<li>…</li>
+</ol>
+<ul>
+<li>基本知识点的细节</li>
+</ul>
+<ol>
+<li>Activity的启动模式以及异常情况下不同Activity的表现</li>
+<li>Service的onBind和onReBind的关联</li>
+<li>onServiceDisconnected(ComponentName className)和binderDied()的区别</li>
+<li>AsyncTask在不同版本上的表现细节</li>
+<li>线程池的细节和参数配置</li>
+<li>… - 熟悉设计模式，有架构意识<h3 id="4-学习方法"><a href="#4-学习方法" class="headerlink" title="4.学习方法"></a>4.学习方法</h3></li>
+</ol>
+<p>这个时候已经没有太具体的学习方法了，无非就是看书、看源码和做项目，平时多种总结，尽量将知识融会贯通从而形成一种体系化的感觉。同时这个阶段对 架构是有一定要求的，架构是抽象的，但是设计模式是具体的，所以一定要加强下设计模式的学习。关于设计模式的学习，最近一本新书推荐给大家 《Android 源码设计模式解析与实战》，既可以学习设计模式，又可能体会到Android源码中的设计思想，我最近也在阅读此书。</p>
+<p>技术要求：</p>
+<ul>
+<li>稍微深入的知识点</li>
+<li>系统核心机制</li>
+<li>基本知识点的细节</li>
+<li>设计模式和架构</li>
+<li>书籍推荐<br>《Android开发艺术探索》、《Android 源码设计模式解析与实战》、《Android内核剖析》</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Android学习笔记成长路线&quot;&gt;&lt;a href=&quot;#Android学习笔记成长路线&quot; class=&quot;headerlink&quot; title=&quot;Android学习笔记成长路线&quot;&gt;&lt;/a&gt;Android学习笔记成长路线&lt;/h2&gt;&lt;h3 id=&quot;1-初级工程师&quot;&gt;&lt;a h
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/child/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/child/tags/Android/"/>
+    
+      <category term="经验" scheme="http://yoursite.com/child/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【转】Android学习笔记之面试相关</title>
     <link href="http://yoursite.com/child/2017/06/06/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E9%9D%A2%E8%AF%95%E7%9B%B8%E5%85%B3/"/>
     <id>http://yoursite.com/child/2017/06/06/Android学习笔记之面试相关/</id>
     <published>2017-06-06T15:11:56.000Z</published>
-    <updated>2017-06-06T15:16:11.668Z</updated>
+    <updated>2017-06-06T15:19:31.948Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Android学习笔记之面试过程所需要掌握的技术"><a href="#Android学习笔记之面试过程所需要掌握的技术" class="headerlink" title="Android学习笔记之面试过程所需要掌握的技术"></a>Android学习笔记之面试过程所需要掌握的技术</h2><h3 id="1-基本知识点"><a href="#1-基本知识点" class="headerlink" title="1. 基本知识点"></a>1. 基本知识点</h3><p>比如四大组件如何使用、如何创建Service、如何进行布局等。这类知识是需要熟练掌握的，并且也没什么难度。</p>
 <h3 id="2-稍微深入的知识点"><a href="#2-稍微深入的知识点" class="headerlink" title="2. 稍微深入的知识点"></a>2. 稍微深入的知识点</h3><p>比如AIDL、Binder、多进程、View的绘制流程、事件分发、消息队列等。这类知识对于高级开发者来说也是必须掌握的，然而相信很多候选者在面试 之前并不能对这些问题了如指掌。这些问题基本都是面试过程中很常见的问题，也是高级岗位所必须掌握的问题，不搞定这些问题无法达到百度的高级工程师的标 准，因此也不可能通过面试。</p>
